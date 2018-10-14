@@ -11,8 +11,7 @@ pipeline {
       steps {
         sh '''pwd
 ls -la
-docker image ls
-docker container ls'''
+'''
       }
     }
   }
