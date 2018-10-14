@@ -11,7 +11,6 @@ pipeline {
       steps {
         sh '''pwd
 ls -la
-whoami
 sudo docker image ls
 sudo docker container ls'''
       }
