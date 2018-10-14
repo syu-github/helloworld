@@ -19,9 +19,7 @@ ls -la
         sh '''echo " in test stage"
 pwd
 ls -la
-whoami
-docker image ls -a
-'''
+sh \'(source /etc/profile;source ~/.bash_profile;sh ./run.sh)\''''
       }
     }
     stage('deploy') {
