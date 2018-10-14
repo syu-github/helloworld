@@ -4,8 +4,14 @@ echo " in test.sh , now test.sh running "
 pwd
 ls
 pipeline {
-    /* insert Declarative Pipeline here */
-    
+      agent any 
+        stage('Example Test') {
+            agent { docker 'openjdk:8-jre' } 
+            steps {
+                echo 'Hello, JDK'
+                sh 'java -version'
+                 }
+          }  
 }
 
 
