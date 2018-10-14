@@ -3,6 +3,13 @@
 echo " in test.sh , now test.sh running "
 pwd
 ls
+pipeline {
+    /* insert Declarative Pipeline here */
+    
+}
+
+
+
 #sh "printenv"
 #sh "mkdir -p output"
 #writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
