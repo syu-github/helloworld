@@ -19,7 +19,7 @@ ls -la
         sh '''echo " in test stage"
 pwd
 ls -la
-sh \'(source /etc/profile;source ~/.bash_profile;sh ./test.sh)\''''
+sh ./test.sh'''
       }
     }
     stage('deploy') {
