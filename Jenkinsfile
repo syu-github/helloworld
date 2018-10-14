@@ -9,7 +9,11 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'npm install'
+        sh '''pwd
+ls -la
+whoami
+sudo docker image ls
+sudo docker container ls'''
       }
     }
   }
