@@ -17,8 +17,7 @@ ls -la
     stage('test') {
       steps {
         sh '''echo " in test stage"
-docker image ls
-docker container ls'''
+sudo docker image ls -a'''
       }
     }
     stage('deploy') {
