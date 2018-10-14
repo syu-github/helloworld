@@ -19,5 +19,10 @@ ls -la
         sh 'echo " in test stage"'
       }
     }
+    stage('deploy') {
+      steps {
+        sh 'echo "in deploy stage "'
+      }
+    }
   }
 }
